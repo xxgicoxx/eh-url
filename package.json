@@ -1,7 +1,7 @@
 {
   "name": "eh-url",
   "displayName": "eh-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node package to check whether a string is a URL",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",
