@@ -1,4 +1,12 @@
-async function ehUrl(url, options) {
+/**
+ * Check url
+ *
+ * @param {!string} url url to check
+ * @param {Object} [options] options
+ * @param {boolean} [options.protocol = true] check protocol
+ * @returns {Promise} return Promise
+ */
+async function ehUrl(url = '', options = {}) {
   try {
     let regex = new RegExp('^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?');
 

@@ -1,6 +1,10 @@
 # eh-url
 Node package to check whether a string is a URL.
 
+<p align="center">
+  <img src="https://i.imgur.com/EfqDfb3.png">
+</p>
+
 ### Installation
 ````
 npm install eh-url
@@ -8,18 +12,39 @@ npm install eh-url
 
 ### Example
 ```javascript
-var ehUrl = require('eh-url');
+const ehUrl = require('eh-url');
 
-await ehUrl('https://google.com.br/'); //true
-await ehUrl('https://google.c/'); //false
-await ehUrl('www.google.com/'); //true
-await ehUrl('www.google.x/'); //false
-await ehUrl('google.com'); //false
-await ehUrl('google.com', { protocol: false }); //true
+ehUrl('https://google.com.br/').then((response) => {
+  console.log(response);
+}).catch((error) => {
+  console.error(error);
+});
+
+ehUrl('google.com').then((response) => {
+  console.log(response);
+}).catch((error) => {
+  console.error(error);
+});
+
+ehUrl('google.com', { protocol: false }).then((response) => {
+  console.log(response);
+}).catch((error) => {
+  console.error(error);
+});
 ```
+
+### Response example
+````
+true
+false
+true
+````
 
 ### Built With
 * [Node.js](https://nodejs.org/en/)
 
 ### Authors
 * **Giovani de Oliveira** - [xxgicoxx](https://github.com/xxgicoxx)
+
+### Acknowledgments
+* [FlatIcon](https://www.flaticon.com/) - Icon
