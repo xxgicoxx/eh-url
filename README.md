@@ -1,11 +1,14 @@
 # eh-url
-Node package to check whether a string is a URL.
+Node.js package for check whether a string is a URL.
 
 <p align="center">
   <img src="https://i.imgur.com/EfqDfb3.png">
 </p>
 
-### Installation
+# Prerequisites
+* [Node.js](https://nodejs.org/en/)
+
+# Installation
 ````
 npm install eh-url
 ````
@@ -33,18 +36,11 @@ ehUrl('google.com', { protocol: false }).then((response) => {
 });
 ```
 
-### Response example
-````
-true
-false
-true
-````
-
-### Built With
+# Built With
 * [Node.js](https://nodejs.org/en/)
 
-### Authors
-* **Giovani de Oliveira** - [xxgicoxx](https://github.com/xxgicoxx)
+# Authors
+* [xxgicoxx](https://github.com/xxgicoxx)
 
-### Acknowledgments
-* [FlatIcon](https://www.flaticon.com/) - Icon
+# Acknowledgments
+* [FlatIcon](https://www.flaticon.com/)
