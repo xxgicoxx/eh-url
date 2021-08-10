@@ -17,23 +17,10 @@ npm install eh-url
 ```javascript
 const ehUrl = require('eh-url');
 
-ehUrl('https://google.com.br/').then((response) => {
-  console.log(response);
-}).catch((error) => {
-  console.error(error);
-});
-
-ehUrl('google.com').then((response) => {
-  console.log(response);
-}).catch((error) => {
-  console.error(error);
-});
-
-ehUrl('google.com', { protocol: false }).then((response) => {
-  console.log(response);
-}).catch((error) => {
-  console.error(error);
-});
+(async () => {
+    const url = await ehUrl('https://google.com.br/');
+    console.log(url);
+})();
 ```
 
 # Built With
