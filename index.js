@@ -1,1 +1,3 @@
-module.exports = require('./src/eh-url');
+const { UrlController } = require('./src/controllers');
+
+module.exports = UrlController;

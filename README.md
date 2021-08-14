@@ -15,10 +15,12 @@ npm install eh-url
 
 ### Example
 ```javascript
-const ehUrl = require('eh-url');
+const EhUrl = require('eh-url');
+
+const ehUrl = new EhUrl();
 
 (async () => {
-    const url = await ehUrl('https://google.com.br/');
+    const url = await ehUrl.check('https://google.com.br/');
     console.log(url);
 })();
 ```
