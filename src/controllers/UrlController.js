@@ -11,6 +11,7 @@ class UrlController {
    * @param {string} url url to check
    * @param {Object} [options] options
    * @param {boolean} [options.protocol = true] check protocol
+   *
    * @returns {Promise} return Promise
    */
   async check(url, options = {}) {
