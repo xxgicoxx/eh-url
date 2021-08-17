@@ -2,7 +2,7 @@
 Node.js package for check whether a string is a URL.
 
 <p align="center">
-  <img src="https://i.imgur.com/EfqDfb3.png">
+  <img src="assets/imgs/eh-url.png">
 </p>
 
 # Prerequisites
