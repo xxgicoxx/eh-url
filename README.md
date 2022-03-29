@@ -13,7 +13,7 @@ Node.js package for check whether a string is a URL.
 npm install eh-url
 ````
 
-### Example
+# Example
 ```javascript
 const EhUrl = require('eh-url');
 
