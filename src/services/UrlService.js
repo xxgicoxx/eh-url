@@ -4,15 +4,17 @@ class UrlService {
       throw new Error("'url' cannot be empty");
     }
 
-    let regex;
-
-    if (options && options.protocol === false) {
-      regex = new RegExp('^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.?|){1}([0-9A-Za-z-\\.@:%_+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?');
-    } else {
-      regex = new RegExp('^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?');
-    }
+    const regex = this.getRegex(options.protocol);
 
     return regex.test(url);
+  }
+
+  getRegex(protocol = false) {
+    if (protocol === false) {
+      return /^(http[s]?:\/\/(www\.)?|ftp:\/\/(www\.)?|www\.?|){1}([0-9A-Za-z-.@:%_+~#=]+)+((\.[a-zA-Z]{2,3})+)(\/(.)*)?(\?(.)*)?/;
+    }
+
+    return /^(http[s]?:\/\/(www\.)?|ftp:\/\/(www\.)?|www\.){1}([0-9A-Za-z-.@:%_+~#=]+)+((\.[a-zA-Z]{2,3})+)(\/(.)*)?(\?(.)*)?/;
   }
 }
 

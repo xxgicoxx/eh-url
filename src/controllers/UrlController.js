@@ -8,11 +8,11 @@ class UrlController {
   /**
    * Check url
    *
-   * @param {string} url url to check
-   * @param {Object} [options] options
-   * @param {boolean} [options.protocol = true] check protocol
+   * @param {string} url URL to check
+   * @param {Object} [options] Options
+   * @param {boolean} [options.protocol = true] Check protocol
    *
-   * @returns {Promise} return Promise
+   * @returns {Promise} Promise
    */
   async check(url, options = {}) {
     return this._service.check(url, options);
