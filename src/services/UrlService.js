@@ -1,7 +1,9 @@
+const { constants } = require('../utils');
+
 class UrlService {
   async check(url, options = {}) {
     if (!url) {
-      throw new Error("'url' cannot be empty");
+      throw new Error(constants.MESSAGE_URL_CANNOT_EMPTY);
     }
 
     const regex = this.getRegex(options.protocol);

@@ -1,9 +1,12 @@
 # eh-url
-Node.js package for check whether a string is a URL.
+Node.js package for check if a string is a URL.
 
 <p align="center">
   <img src="assets/imgs/eh-url.png">
 </p>
+
+# Features
+* Check if a string is a URL
 
 # Prerequisites
 * [Node.js](https://nodejs.org/en/)
